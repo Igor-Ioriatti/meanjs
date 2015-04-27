@@ -1,0 +1,136 @@
+<section data-ng-controller="HomeController">
+	
+		<div class="jumbotron text-center">
+
+
+		  <div >
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" style="margin:auto;">
+		        <div class="carousel-caption">
+		         <!-- <h4>Slide {{$index}}</h4>-->
+		          <p>{{slide.text}}</p>
+		        </div>
+		      </slide>
+		    </carousel>
+		  </div>
+
+
+		<!--
+		<ul rn-carousel="" rn-carousel-index="carouselIndex2" rn-carousel-auto-slide="" rn-carousel-pause-on-hover="" rn-carousel-buffered="" class="carousel2 ng-scope">
+		  <li ng-repeat="item in items|carouselSlice:carouselBufferIndex:carouselBufferSize track by slide.id">
+		    <div ng-style="{'background-image': 'url(' + {{ item }} + ')'}" class="bgimage ng-binding" style="background-image: url({{ item }});">
+		  </li>
+		</ul>
+-->
+			<!--
+			<div class="switch" style="width: 1000px; height: 170px;" ng-switch="" on="article" ng-animate="'animate'">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+					<img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/img/brand/logo.png" />
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<p class="lead">
+					Open-Source Full-Stack Solution For MEAN Applications
+				</p>
+			</div>
+			<div class="row">
+				<p>
+					<a class="btn btn-primary btn-lg" href="http://meanjs.org" target="_blank">Learn more</a>
+				</p>
+			</div>
+		-->
+		</div>
+	
+	<!--
+	<div>
+		<h2>Congrats! You've configured and run the sample application.</h2>
+		<p>MEAN.JS is a web application boilerplate, which means you should start changing everything :-)</p>
+		<p>This sample application tracks users and articles.</p>
+		<ul>
+			<li>
+				Click
+				<em>Signup</em>
+				to get started.
+			</li>
+			<li>
+				Configure your app to work with your social accounts, by editing the
+				<em>/config/env/*.js</em>
+				files.
+			</li>
+			<li>
+				Edit your users module.
+			</li>
+			<li>
+				Add new CRUD modules.
+			</li>
+			<li>
+				Have fun...
+			</li>
+		</ul>
+	</div>
+-->
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-3">
+				<h2>
+					<strong>C</strong>ompany
+				</h2>
+				<p>If you are a Company subscibe here</p>
+				<a class="btn btn-primary btn-lg" href="/#!/signup?role=company" >Company Sign Up</a>
+			</div>
+			<div class="col-md-3">
+				<h2>
+					<strong>A</strong>rchitect
+				</h2>
+				<p>If you are an Architect subscibe here</p>
+				<a class="btn btn-primary btn-lg" href="/#!/signup?role=architect" >Architect Sign Up</a>
+			</div>
+			<div class="col-md-3">
+				<h2>
+					<strong>V</strong>endor
+				</h2>
+				<p>If you are a Vendor subscibe here</p>
+				<a class="btn btn-primary btn-lg" href="/#!/signup?role=vendor" >Vendor Sign Up</a>
+			</div>
+			<div class="col-md-3">
+				<h2>
+					<strong>U</strong>ser
+				</h2>
+				<p>If you are a User subscibe here</p>
+				<a class="btn btn-primary btn-lg" href="/#!/signup?role=user" >User Sign Up</a>
+			</div>
+		</div>
+		<hr>
+		<div class="well">
+			<h2>Ristruttura TU partner's</h2>
+			<p>
+				Visit our commercial partner's
+				<ul>
+					<li><a target="_blank" href="#">Area 1</a>
+					</li>
+					<li><a target="_blank" href="#">Area 2</a>
+					</li>
+					<li><a target="_blank" href="#">Area 3</a>
+					</li>
+					<li><a target="_blank" href="#">Area 4</a>
+					</li>
+					<li><a target="_blank" href="#">Area 5</a>
+					</li>
+					<li><a target="_blank" href="#">Area 6</a>
+					</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Company infos</p>
+      </div>
+    </footer>
+
+</section>
